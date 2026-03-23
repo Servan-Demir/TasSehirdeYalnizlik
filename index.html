@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Şehirde Yalnızlık - Servan DEMİR | Yeni Çıkan Roman</title>
+    <meta name="description" content="Servan Demir'in kaleminden; Şanlıurfa'dan İzmir'e uzanan bir yaşam, emek ve aşkın hikayesi. Taş Şehirde Yalnızlık kitabını hemen keşfedin.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ana-renk: #d4a373; /* Başak sarısı tonu */
+            --arka-plan: #121212;
+            --metin-renk: #e0e0e0;
+            --beyaz: #ffffff;
+            --kepce-renk: rgba(212, 163, 115, 0.1); /* Hafif sarı kepçe */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--arka-plan);
+            color: var(--metin-renk);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Hero Bölümü (Giriş) */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('kapak.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .hero-icerik {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--ana-renk);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .yazar-adi {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .kitap-img {
+            max-width: 280px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Tanıtım ve Özeti */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .bolum-baslik {
+            font-family: 'Playfair Display', serif;
+            color: var(--ana-renk);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--ana-renk);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        /* Kitap Hakkında ve Arka Kapak */
+        .kitap-hakki {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .arka-kapak-img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .arka-kapak-metin {
+            font-style: italic;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Kepçe Çizimi (image_2.png) Tasarım Öğesi Olarak */
+        .kepce-iz {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 150px;
+            height: 150px;
+            background: url('image_2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.1; /* Şeffaf duracak */
+            z-index: 1;
+        }
+
+        /* Alıntılar */
+        .alinti-kutusu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .alinti {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .vurgu {
+            color: var(--ana-renk);
+            font-weight: 600;
+        }
+
+        /* Satın Al Butonu */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--ana-renk);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #bc8a5f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            font-size: 0.8rem;
+        }
+
+        /* Mobil Uyum */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .kitap-hakki { grid-template-columns: 1fr; }
+            .alinti-kutusu { grid-template-columns: 1fr; }
+            header { height: auto; padding: 100px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-icerik">
+            <img src="kapak.jpg" alt="Taş Şehirde Yalnızlık Kitap Kapağı" class="kitap-img">
+            <h1>Taş Şehirde Yalnızlık</h1>
+            <span class="yazar-adi">Servan DEMİR</span>
+            <a href="#" class="btn">Çok Yakında Satışta</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2 class="bolum-baslik">Kitap Hakkında</h2>
+            <div class="kitap-hakki">
+                <img src="arka.jpg" alt="Taş Şehirde Yalnızlık Arka Kapak" class="arka-kapak-img">
+                
+                <div class="arka-kapak-metin">
+                    <p>Taş şehirde makinelerin gürültüsüyle yoğrulmuş bir hayat... Yalnızlıkla dost, alın teriyle yoğrulmuş bir adamın hikâyesi.</p>
+                    <p>Servan DEMİR, Şanlıurfa’nın tozlu köy yollarından İzmir’in taş sokaklarına uzanan yolculuğunda; yoksulluğu, aşkı, umudu ve direnişi bir arada yaşamış bir emekçinin kaleminden anlatıyor.</p>
+                    <p class="vurgu">"Demir yorulur ama pes etmez. Çünkü bazı hayatlar kırılmaz, sadece daha da sertleşir."</p>
+                </div>
+                <div class="kepce-iz"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="bolum-baslik">Kitaptan Kesitler</h2>
+            <div class="alinti-kutusu">
+                <div class="alinti">
+                    "Hayat çoğu zaman bizim seçtiğimiz yollardan çok karşımıza çıkan mecburiyetlerle ilerler... İnsan hayatta önce kendisinin çırağı olur, ben de öyle oldum."
+                </div>
+                <div class="alinti">
+                    "Midem değil, yüreğim açtı. Geceleri bankta yatarken ağaçların arasından yıldızlara bakarak dalıp giderdim."
+                </div>
+                <div class="alinti">
+                    "Çocukluğumu erken bırakmıştım belki ama hayallerimi hiç bırakmadım... Yarın kendi kaderini inşa edecek gücü de bulacaktı."
+                </div>
+                <div class="alinti">
+                    <span class="vurgu">Kepçenin dişleriyle bile yazılsa, anlatılmayı bekler.</span> Taş Şehirde Yalnızlık; bir kepçecinin ellerinden çıkan demir kadar sağlam, ama kalbi kadar da sıcak bir hayatı anlatıyor.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Servan DEMİR. Tüm Hakları Saklıdır. </p>
+    </footer>
+
+</body>
+</html>
