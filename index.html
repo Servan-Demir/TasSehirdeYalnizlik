@@ -236,7 +236,7 @@
     // Gerçek bir veritabanı olmadığı için bu sayaç o anki kullanıcıya özel görünür.
     // Gerçek global sayaç için Firebase gibi bir sistem gerekir ama başlangıç için bu şıktır.
     
-    let beğeniSayısı = localStorage.getItem('kitapBegeni') || Math.floor(Math.random() * 50) + 120; // Başlangıçta dolu gözükmesi için rastgele sayı
+    let beğeniSayısı = localStorage.getItem('kitapBegeni') || Math.floor(Math.random() * 200) + 1000; // Başlangıçta dolu gözükmesi için rastgele sayı
     document.getElementById('sayacGosterge').innerText = beğeniSayısı;
 
     function artirSayac() {
